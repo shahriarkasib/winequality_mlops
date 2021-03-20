@@ -16,14 +16,29 @@ Use the following command to install all the dependencies:
 
 6. keep your data to data_given folder
 
-7. Run the following commands afterward:
-   
-   - git init
-   - dvc init
-   - dvc add data_given\winequality.csv
-   - git add .
-   - git commit -m "message"
-   - git branch -M main
-   - git remote add origin <repositiory url>
-   - git push -u origin main
+7. Run the following commands afterward one by one:
+
+```bash
+  git init
+```
+```bash
+  dvc init
+```
+```bash
+  git add .
+```
+```bash
+  git commit -m "message"
+```
+```bash
+  git branch -M main
+```
+```bash
+  git git remote add origin <repositiory url>
+```
+
+```bash
+  git push -u origin main
+```
+
    
