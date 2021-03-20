@@ -23,4 +23,7 @@ Use the following command to install all the dependencies:
    - dvc add data_given\winequality.csv
    - git add .
    - git commit -m "message"
+   - git branch -M main
+   - git remote add origin <repositiory url>
+   - git push -u origin main
    
