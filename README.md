@@ -41,4 +41,15 @@ Use the following command to install all the dependencies:
   git push -u origin main
 ```
 
+8. write the params.yaml file
+9. write get_data.py
+10. write load_data.py
+11. write stage load_data in dvc.yaml
+12. run the following command
+```bash
+   dvc repo
+```
+
+13. create split_data.py
+
    
