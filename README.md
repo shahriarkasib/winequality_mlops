@@ -45,6 +45,12 @@ dvc add <datasource path>
   git push -u origin main
 ```
 
+One line code for changes and git push
+
+```bash
+git add . && git commit -m "give the message here" && git push -u origin main
+```
+
 8. write the params.yaml file
 9. create get_data.py
 10. create load_data.py
