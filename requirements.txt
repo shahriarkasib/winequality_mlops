@@ -2,3 +2,4 @@ dvc
 dvc[gdrive]
 #cookiecutter
 scikit-learn
+pandas
