@@ -12,7 +12,7 @@ Use the following command to install all the dependencies:
 
 4. keep the template.py to .gitignore file so that it does not go to git (optional)
 
-5. create a directry named data_given to keep the data we will work with.
+5. create a directory named data_given to keep the data we will work with.
 
 6. keep your data to data_given folder
 
@@ -23,6 +23,10 @@ Use the following command to install all the dependencies:
 ```
 ```bash
   dvc init
+```
+
+```bash
+dvc add <datasource path>
 ```
 ```bash
   git add .
@@ -42,8 +46,8 @@ Use the following command to install all the dependencies:
 ```
 
 8. write the params.yaml file
-9. write get_data.py
-10. write load_data.py
+9. create get_data.py
+10. create load_data.py
 11. write stage load_data in dvc.yaml
 12. run the following command
 ```bash
@@ -51,5 +55,8 @@ Use the following command to install all the dependencies:
 ```
 
 13. create split_data.py
+14. Again do 11 for spit_data stage
+15. Run 12 again
+16. create train_and_evaluate.py to train and evaluate model
 
    
