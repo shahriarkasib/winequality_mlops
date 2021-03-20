@@ -34,7 +34,7 @@ Use the following command to install all the dependencies:
   git branch -M main
 ```
 ```bash
-  git git remote add origin <repositiory url>
+  git remote add origin <repositiory url>
 ```
 
 ```bash
