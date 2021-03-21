@@ -68,3 +68,29 @@ git add . && git commit -m "give the message here" && git push -u origin main
 19.create a json file named scores.json which will keep trcak of the model scores
     20. dvc metrics show to show the scores and parameters
    21. dvc metrics diff to show the difference in scores after changing parameters
+
+tox commands - 
+```bash
+tox
+```
+
+for rebuilding
+```bash
+tox -r
+```
+
+pytest command
+```bash
+pytest -v
+```
+
+setup commands
+```bash
+pip install -e .
+```
+
+build your own package
+
+```bash
+python setup.py sdist bdist_wheel
+```
