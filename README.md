@@ -64,5 +64,6 @@ git add . && git commit -m "give the message here" && git push -u origin main
 14. Again do 11 for spit_data stage
 15. Run 12 again
 16. create train_and_evaluate.py to train and evaluate model
-
-   
+17. Create a folder named report
+18. create a json file named params.json which will keep trcak of the model parameters
+19.create a json file named scores.json which will keep trcak of the model scores
