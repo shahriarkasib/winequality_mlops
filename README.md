@@ -59,7 +59,6 @@ git add . && git commit -m "give the message here" && git push -u origin main
 ```bash
    dvc repo
 ```
-
 13. create split_data.py
 14. Again do 11 for spit_data stage
 15. Run 12 again
@@ -67,3 +66,5 @@ git add . && git commit -m "give the message here" && git push -u origin main
 17. Create a folder named report
 18. create a json file named params.json which will keep trcak of the model parameters
 19.create a json file named scores.json which will keep trcak of the model scores
+    20. dvc metrics show to show the scores and parameters
+   21. dvc metrics diff to show the difference in scores after changing parameters
