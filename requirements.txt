@@ -3,3 +3,5 @@ dvc[gdrive]
 #cookiecutter
 scikit-learn
 pandas
+pytest
+tox
