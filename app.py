@@ -24,7 +24,6 @@ def predict(data):
     model_dir_path = config["webapp_model_dir"]
     model = joblib.load(model_dir_path)
     prediction = model.predict(data)
-    print(prediction)
     return prediction[0]
 
 def api_response(request):
@@ -35,7 +34,7 @@ def api_response(request):
         return response
     except Exception as e:
         print(e)
-        error = {error: "Something went wrong!! Try again"}
+        error = {error: "Something went wrong!! Try again. "}
         return error
 
 
@@ -54,7 +53,7 @@ def index():
                 response = api_response(request)
                 return jsonify(response)
         except Exception as e:
-            error = {error:"Someting went wrong!! Try again"}
+            error = {"error":"Someting went wrong!! Try again"}
             return render_template("404.html", error = error)
     else:
         return render_template("index.html")
