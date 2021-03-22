@@ -56,6 +56,7 @@ def index():
             error = {"error":"Someting went wrong!! Try again"}
             return render_template("404.html", error = error)
     else:
+        #cooment
         return render_template("index.html")
 
 if __name__=="__main__":
