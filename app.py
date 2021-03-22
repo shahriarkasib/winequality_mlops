@@ -34,7 +34,7 @@ def api_response(request):
         return response
     except Exception as e:
         print(e)
-        error = {error: "Something went wrong!! Try again. "}
+        error = {"error": "Something went wrong!! Try again. "}
         return error
 
 
