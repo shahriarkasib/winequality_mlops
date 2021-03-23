@@ -3,7 +3,6 @@ import os
 import numpy as np
 from prediction_service import prediction
 
-
 webapp_root = "webapp"
 
 static_dir = os.path.join(webapp_root, "static")
@@ -27,7 +26,7 @@ def index():
 
         except Exception as e:
             print(e)
-            error = {"error": "Something went wrong!! Try again later!"}
+           #error = {"error": "Something went wrong!! Try again later!"}
             error = {"error": e}
 
             return render_template("404.html", error=error)
@@ -35,4 +34,4 @@ def index():
         return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
