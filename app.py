@@ -11,7 +11,7 @@ webapp_root = "webapp"
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
 
-app1 = Flask(__name__, static_folder=static_dir,template_folder=template_dir)
+app = Flask(__name__, static_folder=static_dir,template_folder=template_dir)
 
 def read_params(config_path):
     with open(config_path) as yaml_file:
@@ -39,7 +39,7 @@ def api_response(request):
 
 
 
-@app1.route("/", methods = ["GET", "POST"])
+@app.route("/", methods = ["GET", "POST"])
 
 def index():
     if request.method == "POST":
@@ -60,4 +60,4 @@ def index():
         return render_template("index.html")
 
 if __name__=="__main__":
-    app1.run(host = '127.0.0.1',port = 8000, debug = True)
+    app.run(host = '0.0.0.0',port = 8000, debug = True)
