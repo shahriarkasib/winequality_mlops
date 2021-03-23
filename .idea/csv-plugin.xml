@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\params.yaml">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\train_and_evaluate.py">
           <value>
             <Attribute>
